@@ -10,6 +10,9 @@
   <body>
     <div class="container">
       <h1>Tell Me About Yourself</h1>
+      <br></br>
+      <img src="http://www.hiltonhawaiianvillage.com/assets/img/discover/oahu-island-activities/HHV_Oahu-island-activities_Content_Beaches_455x248_x2.jpg">
+      <br></br>
       <div id="blanks">
       <form>
         <div class="form-group">
@@ -17,25 +20,42 @@
           <input id="name" class="form-control" type="text">
         </div> <!-- closes form group class -->
 
-        <p>What your favorite type of music?</p>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" tpe="date">
+        </div> <!-- closes out form group -->
+
+        <br></br>
+        <label>What your favorite type of music?</label>
         <div class="radio">
           <label>
             <input type="radio" name="genre" value="Country" checked>
             Country
           </label> <!-- closes out country -->
-        </div> <!-- closes form group line 19 -->
+        </div> <!-- closes form group -->
         <div class="radio">
           <label>
             <input type="radio" name="genre" value="Rock" checked>
             Rock
           </label> <!-- closes out rock -->
-        </div> <!-- closes form group line 27 -->
+        </div> <!-- closes form group -->
         <div class="radio">
           <label>
             <input type="radio" name="genre" value="Pop" checked>
             Pop
           </label> <!-- closes out pop -->
-        </div> <!-- closes form group line 33 -->
+        </div> <!-- closes form group -->
+
+        <br></br>
+        <label>What your favorite food?</label>
+        <select class="form-control" id="food">
+          <option value="1">Cheese</option>
+          <option value="2">Hamburger</option>
+          <option value="3">Salad</option>
+          <option value="4">Other</option>
+        </select>
+        <br></br>
+        <button type="submit" class="btn">Submit!</button>
       </form>
     </div> <!-- closes blanks class -->
     </div> <!-- closes container -->
